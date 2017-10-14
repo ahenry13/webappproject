@@ -1,0 +1,1 @@
+## Django blog application for Braggin Rights 
