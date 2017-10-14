@@ -1,0 +1,88 @@
+{% extends "gamingblog/header.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Braggin Rights</title>
+	<header><h1>Braggin Rights Gaming Blog</h1></header>
+<style type="text/css">
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		float: left;
+	}
+	a:link, a:visited {
+		display: block;
+		width: 130px;
+		height: 20px;
+		background-color: blue;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 5px;
+	}
+	a:hover, a:activate {
+		background-color: yellow;
+	}
+	header {
+		text-align: center;
+	}
+	fieldset {
+		height: 11px;
+		float: right;
+	}
+	button {
+		width: 55px;
+	}
+	p {
+		border: solid;
+		width: 500px;
+		height: 70px;
+		text-align: center;
+		clear: both;
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+
+	<ul>
+		<li><a href="home">Home</a></li>
+		<li><a href="games">Games</a></li>
+		<li><a href="blog">Blog</a></li>
+		<li><a href="contact">Contact Info</a></li>
+	</ul>
+
+	<fieldset>
+		<label>
+			UserName
+			<input type="text" name="username">
+		</label>
+		<label>
+			Password
+			<input type="text" name="password">
+		</label>
+
+		<button name="login">
+			<strong>Login</strong>
+		</button>
+	</fieldset>
+
+	<div>
+		<p>
+			Welcome to Braggin Rights Gaming Blog, a blog specifically made to brag about all those high scores and achievements you spent hours to get. We support all achievements of all sizes to boast about. Just log in, select your console/ game and your all set to go.
+		</p>
+	</div>
+
+	<img src="ps4.jpeg" alt="ps4 logo" height="250px" width="500px;">
+	<img src="xbox.png" alt="xbox logo" height="250px" width="500px;">
+
+</body>
+</html>
+{% include "gamingblog/includes/htmlsnippet.html"%}
+{% endblock %}
